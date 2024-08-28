@@ -4,4 +4,4 @@ A simple interface where you can click or randomize the GitHub contributions pan
 
   
 
-**Live Demo:** [Paintribution](https://portfolio-crisilto.vercel.app)
+**Live Demo:** [Paintribution](https://paintribution.vercel.app)
