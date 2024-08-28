@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import '../styles/GridCell.css';
+
 const GridCell = ({ clicks, onClick, getColor }) => {
     return (
         <div

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import '../styles/ContributionGrid.css';
 import GridCell from './GridCell';
 
 const ContributionGrid = ({grid, handleClick, getColor}) => {

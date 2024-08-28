@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+import ContributionGrid from './components/ContributionGrid';
+import Controls from './components/Controls';
+import Header from './components/Header';
 
 const CONTRIBUTION = [
   { number: 1, color: "#0D2A20" },
@@ -40,28 +43,9 @@ function App() {
 
   return (
     <div>
-      <div className="header">
-        <h1>Contribution Grid</h1>
-        <p>Click on the squares to relieve some stress!</p>
-      </div>
-      <div className="buttons">
-        <button className="button" onClick={resetGrid}>Reset</button>
-        <button className="button" onClick={randomizeGrid}>Randomize</button>
-      </div>
-      <div className="contribution-grid">
-        {grid.map((row, rowIndex) => (
-          <div key={rowIndex} className="row">
-            {row.map((cell, colIndex) => (
-              <div
-                key={colIndex}
-                className="cell"
-                style={{ backgroundColor: getColor(cell) }}
-                onClick={() => handleClick(rowIndex, colIndex)}
-              ></div>
-            ))}
-          </div>
-        ))}
-      </div>
+      <Header />
+      <Controls onReset={resetGrid} onRandomize={randomizeGrid} />
+      <ContributionGrid grid={grid} handleClick={handleClick} getColor={getColor} />
     </div>
   );
 }

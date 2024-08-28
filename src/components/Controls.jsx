@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import '../styles/Controls.css';
 
 const Controls = ({ onReset, onRandomize }) => {
   return (
