@@ -3,6 +3,7 @@ import './App.css';
 import ContributionGrid from './components/ContributionGrid';
 import Controls from './components/Controls';
 import Header from './components/Header';
+import MusicPlayer from './components/MusicPlayer';
 
 const CONTRIBUTION = [
   { number: 1, color: "#0D2A20" },
@@ -46,6 +47,7 @@ function App() {
       <Header />
       <Controls onReset={resetGrid} onRandomize={randomizeGrid} />
       <ContributionGrid grid={grid} handleClick={handleClick} getColor={getColor} />
+      <MusicPlayer />
     </div>
   );
 }
