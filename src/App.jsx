@@ -43,7 +43,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='app-container'>
       <Header />
       <Controls onReset={resetGrid} onRandomize={randomizeGrid} />
       <ContributionGrid grid={grid} handleClick={handleClick} getColor={getColor} />

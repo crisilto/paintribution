@@ -1,13 +1,25 @@
 body {
   background-color: #0D1117;
-  color: #e0e0e0;
-  font-family: 'Arial', sans-serif;
+  color: #E6EDF3;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin: auto; 
+  flex-grow: 1; 
 }
