@@ -4,8 +4,8 @@ import '../styles/Controls.css';
 const Controls = ({ onReset, onRandomize }) => {
   return (
     <div className="buttons">
-      <button className="button" onClick={onReset}>Reset</button>
-      <button className="button" onClick={onRandomize}>Randomize</button>
+      <button className="button-30" role="button" onClick={onReset}>Reset</button>
+      <button className="button-30" role="button" onClick={onRandomize}>Randomize</button>
     </div>
   );
 };
