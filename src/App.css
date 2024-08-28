@@ -1,0 +1,23 @@
+.contribution-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px;
+  background: #0D1117;
+  border-radius: 8px;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  gap: 2px;
+}
+
+.cell {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 2px;
+}
